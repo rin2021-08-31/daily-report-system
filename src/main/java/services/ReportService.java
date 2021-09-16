@@ -92,7 +92,6 @@ public class ReportService extends ServiceBase {
             rv.setUpdatedAt(ldt);
             createInternal(rv);
         }
-
         //バリデーションで発生したエラーを返却（エラーがなければ0件の空リスト）
         return errors;
     }
@@ -115,7 +114,6 @@ public class ReportService extends ServiceBase {
 
             updateInternal(rv);
         }
-
         //バリデーションで発生したエラーを返却（エラーがなければ0件の空リスト）
         return errors;
     }
@@ -134,11 +132,9 @@ public class ReportService extends ServiceBase {
      * @param rv 日報データ
      */
     private void createInternal(ReportView rv) {
-
         em.getTransaction().begin();
         em.persist(ReportConverter.toModel(rv));
         em.getTransaction().commit();
-
     }
 
     /**
@@ -146,7 +142,6 @@ public class ReportService extends ServiceBase {
      * @param rv 日報データ
      */
     private void updateInternal(ReportView rv) {
-
         em.getTransaction().begin();
         Report r = findOneInternal(rv.getId());
         ReportConverter.copyViewToModel(r, rv);

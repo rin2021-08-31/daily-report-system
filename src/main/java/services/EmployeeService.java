@@ -65,7 +65,6 @@ public class EmployeeService extends ServiceBase {
         }
 
         return EmployeeConverter.toView(e);
-
     }
 
     /**

@@ -14,7 +14,6 @@ import services.ReportService;  //追記
 
 /**
  * トップページに関する処理を行うActionクラス
- *
  */
 public class TopAction extends ActionBase {
 

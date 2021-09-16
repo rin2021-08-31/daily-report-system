@@ -9,7 +9,6 @@ import services.EmployeeService;
 
 /**
  * 従業員インスタンスに設定されている値のバリデーションを行うクラス
- *
  */
 public class EmployeeValidator {
 

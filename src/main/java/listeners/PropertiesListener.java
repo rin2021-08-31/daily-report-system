@@ -41,7 +41,6 @@ public class PropertiesListener implements ServletContextListener {
             while (pit.hasNext()) {
                 String pname = pit.next();
                 context.setAttribute(pname, properties.getProperty(pname));
-
             }
         } catch (NullPointerException e) {
             e.printStackTrace();

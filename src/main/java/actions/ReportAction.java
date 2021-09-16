@@ -16,7 +16,6 @@ import services.ReportService;
 
 /**
  * 日報に関する処理を行うActionクラス
- *
  */
 public class ReportAction extends ActionBase {
 

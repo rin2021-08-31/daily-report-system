@@ -73,7 +73,6 @@ public abstract class ActionBase {
             //commandの値が不正で実行できない場合エラー画面を呼び出し
             forward(ForwardConst.FW_ERR_UNKNOWN);
         }
-
     }
 
     /**
@@ -90,7 +89,6 @@ public abstract class ActionBase {
 
         //jspファイルの呼び出し
         dispatcher.forward(request, response);
-
     }
 
     /**
@@ -111,7 +109,6 @@ public abstract class ActionBase {
 
         //URLへリダイレクト
         response.sendRedirect(redirectUrl);
-
     }
 
     /**
@@ -134,7 +131,6 @@ public abstract class ActionBase {
         } else {
             return true;
         }
-
     }
 
     /**

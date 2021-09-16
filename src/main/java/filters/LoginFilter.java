@@ -85,7 +85,6 @@ public class LoginFilter implements Filter {
                         dispatcher.forward(request, response);
 
                         return;
-
                     }
                 }
             }
